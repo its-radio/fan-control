@@ -1,0 +1,10 @@
+[Unit]
+Description=Raspberry Pi Fan Controller
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /root/scripts/fan-control.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
